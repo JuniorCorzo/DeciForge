@@ -7,7 +7,7 @@ function binaryToDeci() {
       numDeci += Math.pow(2, numBinary.length - (i + 1));
     }
 
-    if (numBinary[i] !== "0") {
+    if (numBinary[i] !== "0" && numBinary[i] !== "1") {
       document.getElementById("resultado-binary").innerText =
         "No es un numero binario";
       return;

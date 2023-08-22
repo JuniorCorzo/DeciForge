@@ -46,7 +46,7 @@ body {
   height: 13em;
   flex: 0;
   background: #232946;
-  border: solid 0.13em #121629;
+  border: solid 4px #121629;
 }
 
 
@@ -92,6 +92,7 @@ body {
 }
 
 .convertidores h1 {
+  margin-top: .15em;
   font-size: 2rem;
 }
 
@@ -118,7 +119,6 @@ body {
   cursor: pointer;
 }
 
-.convertidores h1,
 .convertidores h2,
 .convertidores button,
 .convertidores input {
@@ -129,4 +129,47 @@ body {
 .porcentaje-to-deci,
 .octa-to-deci {
   display: none;
+}
+
+.convert-explicacion {
+  margin: 0 auto;
+  background-color: #232946;
+  border: #121629 4px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.convert-explicacion h1 {
+  padding-top: .3em;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.convert-explicacion>p {
+  padding: 0 1.5em .3em 1.5em;
+}
+
+@media (max-width: 696px) {
+  .div-convertidores {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 26em;
+  }
+
+  .lista-convertidores {
+    margin-bottom: 1em;
+  }
+
+  .main-convertidores {
+    margin-left: 0;
+  }
+
+  .convertidores {
+    width: 16em;
+    height: 10em;
+  }
 }

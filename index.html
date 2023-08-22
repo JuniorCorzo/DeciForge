@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Convertidores</title>
+    <title>DecimalForge</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,74 +19,119 @@
       <h1>DecimalForge</h1>
     </header>
 
-    <section>
-      <div class="div-convertidores">
-        <div class="lista-convertidores">
-          <ul>
-            <li><button id="button-bi">Binarios</button></li>
-            <li><button id="button-hex">Hexadecimal</button></li>
-            <li><button id="button-porcentaje">Porcentaje</button></li>
-            <li><button id="button-octal">Octal</button></li>
-          </ul>
+    <main>
+      <section>
+        <div class="div-convertidores">
+          <div class="lista-convertidores">
+            <ul>
+              <li><button id="button-bi">Binarios</button></li>
+              <li><button id="button-hex">Hexadecimal</button></li>
+              <li><button id="button-porcentaje">Porcentaje</button></li>
+              <li><button id="button-octal">Octal</button></li>
+            </ul>
+          </div>
+
+          <div class="main-convertidores">
+            <div class="binary-to-deci convertidores" id="div-bi">
+              <label>
+                <h1>Numero Binario</h1>
+                <input
+                  id="binary"
+                  type="text"
+                  placeholder="Ingrese el numero"
+                  autocomplete="off"
+                />
+              </label>
+              <h2 class="resultado" id="resultado-binary">Resultado:</h2>
+              <button onclick="binaryToDeci()">Convertir</button>
+            </div>
+
+            <div class="hex-to-deci convertidores" id="div-hex">
+              <label>
+                <h1>Numero Hexadecimal</h1>
+                <input
+                  id="hexadecimal"
+                  type="text"
+                  placeholder="Ingrese el numero"
+                  autocomplete="off"
+                />
+              </label>
+              <h2 class="resultado" id="resultado-hexadecimal">Resultado:</h2>
+              <button onclick="hexToDeci()">Convertir</button>
+            </div>
+
+            <div class="porcentaje-to-deci convertidores" id="div-porcentaje">
+              <label>
+                <h1>Porcentaje</h1>
+                <input
+                  id="porcentaje"
+                  type="text"
+                  placeholder="Ingrese el numero"
+                  autocomplete="off"
+                />
+              </label>
+              <h2 class="resultado" id="resultado-porcentaje">Resultado:</h2>
+              <button onclick="porcentajeToDeci()">Convertir</button>
+            </div>
+
+            <div class="octa-to-deci convertidores" id="div-octa">
+              <label>
+                <h1>Numero Octal</h1>
+                <input
+                  id="octa"
+                  type="text"
+                  placeholder="Ingrese el numero"
+                  autocomplete="off"
+                />
+              </label>
+              <h2 class="resultado" id="resultado-octa">Resultado:</h2>
+              <button onclick="octaToDeci()">Convertir</button>
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <div class="main-convertidores">
-          <div class="binary-to-deci convertidores" id="div-bi">
-            <label>
-              <h1>Numero Binario</h1>
-              <input
-                id="binary"
-                type="text"
-                placeholder="Ingrese el numero"
-                autocomplete="off"
-              />
-            </label>
-            <h2 class="resultado" id="resultado-binary">Resultado:</h2>
-            <button onclick="binaryToDeci()">Convertir</button>
-          </div>
-
-          <div class="hex-to-deci convertidores" id="div-hex">
-            <label>
-              <h1>Numero Hexadecimal</h1>
-              <input
-                id="hexadecimal"
-                type="text"
-                placeholder="Ingrese el numero"
-                autocomplete="off"
-              />
-            </label>
-            <h2 class="resultado" id="resultado-hexadecimal">Resultado:</h2>
-            <button onclick="hexToDeci()">Convertir</button>
-          </div>
-
-          <div class="porcentaje-to-deci convertidores" id="div-porcentaje">
-            <label>
-              <h1>Porcentaje</h1>
-              <input
-                id="porcentaje"
-                type="text"
-                placeholder="Ingrese el numero"
-                autocomplete="off"
-              />
-            </label>
-            <h2 class="resultado" id="resultado-porcentaje">Resultado:</h2>
-            <button onclick="porcentajeToDeci()">Convertir</button>
-          </div>
-
-          <div class="octa-to-deci convertidores" id="div-octa">
-            <label>
-              <h1>Numero Octal</h1>
-              <input
-                id="octa"
-                type="text"
-                placeholder="Ingrese el numero"
-                autocomplete="off"
-              />
-            </label>
-            <h2 class="resultado" id="resultado-octa">Resultado:</h2>
-            <button onclick="octaToDeci()">Convertir</button>
-          </div>
+    <section class="explicacion-convertidores">
+      <div class="binary-to-deci convert-explicacion">
+        <div>
+          <h1>COMO CONVERTIR UN NUMERO BINARIO A DECIMAL</h1>
         </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+          vitae dicta aperiam consequuntur vero. Eius iste fuga ipsum et
+          laboriosam ducimus explicabo optio minima natus, temporibus
+          repudiandae obcaecati accusamus voluptatem? Et tempore inventore
+          blanditiis? Repellendus laudantium porro qui sint totam explicabo vero
+          velit voluptatibus, facere asperiores odio magni, doloribus expedita,
+          eaque sapiente. Accusantium labore hic consectetur harum enim impedit
+          culpa? Debitis quas, deserunt temporibus eius impedit assumenda
+          sapiente magni veritatis suscipit? Assumenda doloremque, incidunt quam
+          fugiat rerum recusandae dolor, accusamus voluptates labore porro
+          voluptas? Placeat dignissimos hic qui ea sit. Facilis perferendis
+          ducimus impedit quas iusto aperiam minima quaerat eligendi pariatur
+          error, veniam debitis, enim eaque ab dolor tenetur quos repellendus
+          magnam atque obcaecati quia cumque explicabo? Ad, vitae nostrum? Nisi
+          dicta repudiandae id tempora, ipsa corrupti voluptatum similique cum
+          sed quas tempore rem, dolores corporis, suscipit nihil saepe nesciunt
+          repellat autem illo ut. Veritatis iure placeat quae labore expedita?
+          Quae magnam, dolor asperiores, consequuntur amet incidunt omnis libero
+          cum dicta laboriosam sit iusto. Quo, tempore! Animi, quod, cumque non
+          delectus in quo nesciunt quidem porro, consequatur dicta labore
+          eveniet! Culpa vitae ipsa consectetur nesciunt neque debitis mollitia
+          ratione, dolore voluptatibus provident et obcaecati animi sint quasi
+          odio, veniam repellendus. Voluptatibus ex sed aliquam delectus
+          consequuntur at nisi minus rem. Illum expedita, sed aspernatur animi,
+          obcaecati eligendi beatae dolore natus ab repudiandae nostrum deserunt
+          debitis fugit enim dolor corporis cumque a, optio neque voluptatum ex
+          architecto nihil? Nihil, deleniti eligendi. Laborum commodi aspernatur
+          voluptatem blanditiis quas accusantium velit vel, sed animi sint
+          molestiae et at qui quod impedit porro veritatis eos modi quibusdam
+          explicabo nihil vitae dicta? Voluptates, non ducimus! Voluptatem
+          corporis fugiat nemo ex hic. Voluptatum, fuga ut aperiam soluta
+          facilis veniam nobis cum suscipit saepe et cupiditate illum ipsa ad
+          vero quis assumenda eveniet neque odit necessitatibus? Doloremque.
+        </p>
       </div>
     </section>
 
