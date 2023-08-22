@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertidores</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Padauk&family=Raleway:ital@0;1&family=Ropa+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="cabecera">
+      <h1>DecimalForge</h1>
+    </header>
+
+    <section>
+      <div class="div-convertidores">
+        <div class="lista-convertidores">
+          <ul>
+            <li><button id="button-bi">Binarios</button></li>
+            <li><button id="button-hex">Hexadecimal</button></li>
+            <li><button id="button-porcentaje">Porcentaje</button></li>
+            <li><button id="button-octal">Octal</button></li>
+          </ul>
+        </div>
+
+        <div class="main-convertidores">
+          <div class="hex-to-deci convertidores" id="div-hex">
+            <label>
+              <h1>Numero Hexadecimal</h1>
+              <input
+                id="hexadecimal"
+                type="text"
+                placeholder=" Ingrese el numero Hexadecimal"
+              />
+            </label>
+            <h2 class="resultado" id="resultado-hexadecimal">Resultado:</h2>
+            <button onclick="hexToDeci()">Convertir</button>
+          </div>
+
+          <div class="binary-to-deci convertidores" id="div-bi">
+            <label>
+              <input
+                id="binary"
+                type="text"
+                placeholder=" Ingrese numero binario"
+              />
+            </label>
+            <h2 class="resultado" id="resultado-binary">Resultado:</h2>
+            <button onclick="binaryToDeci()">Convertir</button>
+          </div>
+
+          <div class="porcentaje-to-deci convertidores" id="div-porcentaje">
+            <label>
+              <input
+                id="porcentaje"
+                type="text"
+                placeholder=" Ingrese el numero porcentaje"
+              />
+            </label>
+            <h2 class="resultado" id="resultado-porcentaje">Resultado:</h2>
+            <button onclick="porcentajeToDeci()">Convertir</button>
+          </div>
+
+          <div class="octa-to-deci convertidores" id="div-octa">
+            <label>
+              <input
+                id="octa"
+                type="text"
+                placeholder=" Ingrese el numero octa"
+              />
+            </label>
+            <h2 class="resultado" id="resultado-octa">Resultado:</h2>
+            <button onclick="octaToDeci()">Convertir</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/ConvertirToBaseX.js"></script>
+    <script src="js/HideConverts.js"></script>
+  </body>
+</html>
