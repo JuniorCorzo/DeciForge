@@ -1,11 +1,16 @@
 function binaryToDeci() {
-  let binary = document.getElementById("binary");
+  let numBinary = document.getElementById("binary").value;
   let numDeci = 0;
-  let numBinary = binary.value;
 
   for (let i = 0; i < numBinary.length; i++) {
     if (numBinary[i] === "1") {
       numDeci += Math.pow(2, numBinary.length - (i + 1));
+    }
+
+    if (numBinary[i] !== "0") {
+      document.getElementById("resultado-binary").innerText =
+        "No es un numero binario";
+      return;
     }
   }
 

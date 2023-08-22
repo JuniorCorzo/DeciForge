@@ -10,21 +10,23 @@ body {
 }
 
 body {
-  background: #232946;
+  background: #0d1020;
   color: #b8c1ec;
   font-family: "Padauk", sans-serif;
   font-size: 1rem;
 }
 
 .cabecera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 100vw;
-  height: 3em;
+  height: 4em;
 }
 
 .cabecera h1 {
   color: #fffffe;
-  text-decoration-line: underline;
   font-family: "Ropa Sans", sans-serif;
   font-size: 2.5rem;
 }
@@ -35,68 +37,92 @@ body {
   justify-content: center;
   position: relative;
   width: 100vw;
-  height: 20em;
+  height: 17em;
+  font-family: 'Raleway', sans-serif;
 }
 
 .lista-convertidores,
 .main-convertidores {
+  height: 13em;
   flex: 0;
-  background: #b8c1ec;
+  background: #232946;
   border: solid 0.13em #121629;
-  border-radius: 0.5em;
 }
 
-.lista-convertidores {
-  height: 11em;
-}
 
-.lista-convertidores li,
-.lista-convertidores li button {
+.lista-convertidores li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.5em;
-  width: 8em;
-  height: 2em;
+  width: 10em;
+  height: 2.5em;
+  margin-top: 0.5em;
   list-style-type: none;
-  cursor: pointer;
+}
+
+.lista-convertidores li button {
+  width: 10em;
+  height: 2.5em;
+  font-family: 'Raleway', sans-serif;
 }
 
 .lista-convertidores li button,
 .convertidores button {
   background: #eebbc3;
-  border: #232946 solid 0.12rem;
-  border-radius: 0.5em;
+  border: none;
   color: #232946;
   font-size: 0.8rem;
+  cursor: pointer;
 }
 
 .main-convertidores {
-  margin-left: 3em;
+  margin-left: 2em;
 }
 
 .main-convertidores {
   display: flex;
   align-items: center;
-  height: 11em;
+  height: 13em;
 }
 
 .convertidores {
   position: relative;
   margin-left: 2em;
-  width: 18em;
-  color: #232946;
+  width: 22em;
+}
+
+.convertidores h1 {
+  font-size: 2rem;
+}
+
+.convertidores h2 {
+  font-size: 1.5rem;
 }
 
 .convertidores input {
+  padding-left: .5em;
+  background-color: #b8c1ec;
+  color: #232946;
+  border: none;
   width: 17em;
-  height: 2em;
+  height: 2.4em;
+}
+
+.convertidores input:focus {
+  outline: none;
 }
 
 .convertidores button {
   width: 6em;
   height: 2.2em;
   cursor: pointer;
+}
+
+.convertidores h1,
+.convertidores h2,
+.convertidores button,
+.convertidores input {
+  margin-top: .3em;
 }
 
 .hex-to-deci,

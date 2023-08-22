@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Padauk&family=Raleway:ital@0;1&family=Ropa+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Padauk&family=Raleway&family=Ropa+Sans&display=swap"
       rel="stylesheet"
     />
 
@@ -31,37 +31,42 @@
         </div>
 
         <div class="main-convertidores">
-          <div class="hex-to-deci convertidores" id="div-hex">
-            <label>
-              <h1>Numero Hexadecimal</h1>
-              <input
-                id="hexadecimal"
-                type="text"
-                placeholder=" Ingrese el numero Hexadecimal"
-              />
-            </label>
-            <h2 class="resultado" id="resultado-hexadecimal">Resultado:</h2>
-            <button onclick="hexToDeci()">Convertir</button>
-          </div>
-
           <div class="binary-to-deci convertidores" id="div-bi">
             <label>
+              <h1>Numero Binario</h1>
               <input
                 id="binary"
                 type="text"
-                placeholder=" Ingrese numero binario"
+                placeholder="Ingrese el numero"
+                autocomplete="off"
               />
             </label>
             <h2 class="resultado" id="resultado-binary">Resultado:</h2>
             <button onclick="binaryToDeci()">Convertir</button>
           </div>
 
+          <div class="hex-to-deci convertidores" id="div-hex">
+            <label>
+              <h1>Numero Hexadecimal</h1>
+              <input
+                id="hexadecimal"
+                type="text"
+                placeholder="Ingrese el numero"
+                autocomplete="off"
+              />
+            </label>
+            <h2 class="resultado" id="resultado-hexadecimal">Resultado:</h2>
+            <button onclick="hexToDeci()">Convertir</button>
+          </div>
+
           <div class="porcentaje-to-deci convertidores" id="div-porcentaje">
             <label>
+              <h1>Porcentaje</h1>
               <input
                 id="porcentaje"
                 type="text"
-                placeholder=" Ingrese el numero porcentaje"
+                placeholder="Ingrese el numero"
+                autocomplete="off"
               />
             </label>
             <h2 class="resultado" id="resultado-porcentaje">Resultado:</h2>
@@ -70,10 +75,12 @@
 
           <div class="octa-to-deci convertidores" id="div-octa">
             <label>
+              <h1>Numero Octal</h1>
               <input
                 id="octa"
                 type="text"
-                placeholder=" Ingrese el numero octa"
+                placeholder="Ingrese el numero"
+                autocomplete="off"
               />
             </label>
             <h2 class="resultado" id="resultado-octa">Resultado:</h2>
